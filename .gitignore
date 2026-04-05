@@ -1,0 +1,49 @@
+# 忽略 docs 文件夹
+docs/
+
+# 忽略环境变量文件
+.env
+
+# 忽略 Python 虚拟环境
+.venv/
+venv/
+
+# 忽略 Python 编译缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 忽略依赖锁文件（uv / pip）
+uv.lock
+package-lock.json
+yarn.lock
+poetry.lock
+
+# 忽略输出/临时文件夹
+output/
+originals/
+
+# 编辑器 / 系统文件
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
