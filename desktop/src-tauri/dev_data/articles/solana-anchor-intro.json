@@ -1,0 +1,66 @@
+{
+  "id": "solana-anchor-intro",
+  "title": "Solana Anchor Introduction Introduction",
+  "status": "ready",
+  "createdAt": "2026-04-05T00:00:00Z",
+  "audioPath": "/demo/introduction.mp3",
+  "lastPlayedMs": 42014,
+  "segments": [
+    {
+      "id": "seg-001",
+      "sourceText": "Introduction",
+      "translatedText": "介绍2",
+      "startMs": 0,
+      "endMs": 2080
+    },
+    {
+      "id": "seg-002",
+      "sourceText": "AnchorAnchor is a development framework for building secure",
+      "translatedText": "AnchorAnchor 是一个用于构建安全应用的开发框架。",
+      "startMs": 2080,
+      "endMs": 16080
+    },
+    {
+      "id": "seg-003",
+      "sourceText": "Solana programs (smart contracts)",
+      "translatedText": "Solana 程序，也就是智能合约。",
+      "startMs": 16080,
+      "endMs": 18910
+    },
+    {
+      "id": "seg-004",
+      "sourceText": "Anchor is the leading development framework for building Solana programs",
+      "translatedText": "Anchor 是构建 Solana 程序的主流开发框架。",
+      "startMs": 18910,
+      "endMs": 25800
+    },
+    {
+      "id": "seg-005",
+      "sourceText": "and simplifies the process of writing, testing, deploying,",
+      "translatedText": "它简化了编写、测试和部署的过程。",
+      "startMs": 25800,
+      "endMs": 30090
+    },
+    {
+      "id": "seg-006",
+      "sourceText": "and interacting with Solana programs.",
+      "translatedText": "也简化了与 Solana 程序交互的流程。",
+      "startMs": 30090,
+      "endMs": 33120
+    },
+    {
+      "id": "seg-007",
+      "sourceText": "The Anchor framework helps developers build production-ready applications faster",
+      "translatedText": "Anchor 帮助开发者更快构建可投入生产的应用。",
+      "startMs": 33120,
+      "endMs": 39550
+    },
+    {
+      "id": "seg-008",
+      "sourceText": "while reducing vulnerabilities through built-in security features.",
+      "translatedText": "同时通过内置安全特性降低漏洞风险。",
+      "startMs": 39550,
+      "endMs": 44420
+    }
+  ]
+}

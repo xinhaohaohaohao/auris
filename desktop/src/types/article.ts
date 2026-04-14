@@ -6,6 +6,16 @@ export type Segment = {
   endMs: number;
 };
 
+export type ArticleSummary = {
+  id: string;
+  title: string;
+  status: "imported" | "processing" | "ready" | "failed";
+  createdAt: string;
+  audioPath: string | null;
+  lastPlayedMs: number;
+  segmentCount: number;
+};
+
 export type Article = {
   id: string;
   title: string;

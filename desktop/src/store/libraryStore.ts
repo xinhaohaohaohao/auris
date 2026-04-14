@@ -1,14 +1,28 @@
 import { create } from "zustand";
-import { demoArticles } from "../mocks/demoArticles";
-import type { Article } from "../types/article";
+import { listArticles } from "../lib/tauri";
+import type { ArticleSummary } from "../types/article";
 
 type LibraryState = {
-  articles: Article[];
-  getArticleById: (articleId: string) => Article | undefined;
+  summaries: ArticleSummary[];
+  isLoading: boolean;
+  error: string | null;
+  loadSummaries: () => Promise<void>;
 };
 
-export const useLibraryStore = create<LibraryState>((_set, get) => ({
-  articles: demoArticles,
-  getArticleById: (articleId) =>
-    get().articles.find((article) => article.id === articleId),
+export const useLibraryStore = create<LibraryState>((set) => ({
+  summaries: [],
+  isLoading: false,
+  error: null,
+  loadSummaries: async () => {
+    set({ isLoading: true, error: null });
+
+    try {
+      const summaries = await listArticles();
+      set({ summaries, isLoading: false, error: null });
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Failed to load articles from Tauri";
+      set({ isLoading: false, error: message });
+    }
+  },
 }));
